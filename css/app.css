@@ -1,0 +1,202 @@
+body {
+    background: url("../img/fondo.jpg");
+    background-size: 100% 100%;
+    background-position: top center;
+    background-attachment: fixed;
+    font-family: 'Chivo', sans-serif;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background-color: #000;
+    font-size: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+/*Strip the ul of padding and list styling*/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*Create a horizontal list with spacing*/
+nav li {
+    display: block;
+    float: left;
+    
+    /*Make all menu links full width*/
+    border-bottom: 1px solid #ccc;
+}
+
+/*Style for menu links*/
+nav li a {
+    display: block;
+    min-width: 200px;
+    text-align: center;
+    color: #eee;
+    text-decoration: none;
+    
+    /*Make all menu links full width*/
+    width: 100%;
+}
+
+/*Hover state for dropdown links*/
+nav li:hover ul a:hover {
+    background: #3a3a3a;
+    color: #eee;
+}
+
+/*Hover state for top level links*/
+nav ul li:hover { background: #3a3a3a; }
+/*Hover state for top level links*/
+nav ul li:hover a { color: #eee; }
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after { border-color: #eee transparent transparent; }
+
+/*Style for dropdown links*/
+nav li ul a {
+    color: #eee;
+    background: #222;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*Prevent text wrapping*/
+nav li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+
+/*Make all menu links full width*/
+nav ul li { width: 100%; }
+
+@media screen and (min-width: 760px) {
+    nav ul { padding-left: 30px; }
+    nav li { border-bottom: none; }
+    nav li a { width: initial; }
+    nav ul li { width: initial; }
+}
+
+footer {
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    text-align: right;
+}
+
+.reflexion p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+    color: #1a1a1a;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+  
+.parrafo {
+    font-weight: 300;
+    font-size: 17px;
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #000;
+}
+  
+h4 {
+    font-family: 'Chivo', sans-serif;
+    font-weight: 300;
+}
+  
+#espacioTexto {
+    background-color: #eee;
+    margin: 30px 7% 0 7%;
+}
+
+.parrafo {
+    background-color: #eee;
+}
+
+.imgInge img { padding-top: 0; }
+.imgEstructuras img { padding-top: 0; }
+.imgObjetivo img {
+    height: 350px;
+    width: auto;
+    height: 320px;
+    padding-left: 0;
+}
+    
+.imgComputacion img {
+    height: 270px;
+    width: auto;
+    padding-left: 0;
+}
+
+.imgWeb img {
+    height: 135px;
+    width: auto;
+    padding-left: 0;
+    padding-top: 0;
+}
+
+.imgScrum img {
+  padding-top: 0;
+  padding-left: 0;
+  height: auto;
+  width: 400px;
+}
+
+.textoL { padding-right: 0; }
+.textoR { padding-left: 0; }
+.linkdescarga a:hover { color: #32abc3; }
+.infoPersonal { font-size: 20px; }
+
+@media print, screen and (min-width: 64em) {
+    .imgInge img { padding-top: 20px; }
+    .imgEstructuras img { padding-top: 50px; }
+    .imgObjetivo img { padding-left: 25px; }
+    .imgComputacion img { padding-left: 30px; }
+    .imgWeb img {
+        padding-left: 50px;
+        padding-top: 10px;
+    }
+    .imgScrum img {
+        padding-top: 20px;
+        padding-left: 40px;
+        height: 200px;
+        width: auto;
+    }
+    .textoL { padding-right: 45px; }
+    .textoR { padding-left: 45px; }
+}
+  
+.imgAlerta {
+    height: 20px;
+    width: auto;
+}
+
+.imgCP img {
+    width: 500px;
+    height: auto;
+}
+ 
+.linkdescarga a {
+    background-color: #eee;
+    color: #333c87;
+    text-align: initial;
+}
+
+.infoPersonal a {
+    text-align: left;
+    color: #111;
+    display: initial;
+}
